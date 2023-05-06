@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+	<title>Danh sách sản phẩm</title>
+</head>
+<style>
+  body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	background-color: #7498df;
+	color: white;
+	padding: 20px;
+}
+header a{
+  margin-left: 10px;
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+	border:1px solid black;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+    text-decoration: none;
+}
+header img {
+	max-width: 200px;
+	margin-right: 150px;
+  margin-left: 150px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 24px;
+  font-family: 'Dancing Script', cursive;
+}
+
+main {
+	padding: 20px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+li {
+	margin: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	border-radius: 5px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 250px;
+}
+
+img {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+h2 {
+	margin: 0;
+  font-size: 15px;
+}
+
+p {
+	margin: 0;
+}
+
+button {
+	margin-top: 10px;
+	background-color: #96d2ed;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  border: 2px solid #ac7ac6;
+}
+
+button:hover {
+	background-color: #31b4d5;
+}
+button a{
+  color:blue;
+}
+.searchBar input{
+  height: 20px;
+  width: 350px;
+  background-color: #ceb2dd;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.searchBar i{
+  
+  height: 20px;
+  width: 20px;
+  margin-left: -30px;
+}
+::placeholder{
+  color: black;
+}
+.menu-item{
+  margin-right: 50px;
+}
+.menu-item a{
+  text-decoration: none;
+
+}
+</style>
+<body>
+	<header>
+    <a href="trangchu.html">Trở lại</a>
+		<img src="images/logo-mixue.png" alt="Logo cửa hàng">
+		<h1>DANH SÁCH SẢN PHẨM</h1>
+	</header>
+	<main>
+    <div class="searchBar">
+      <input placeholder="Bạn muốn tìm gì ?" id="searchBar" name="searchBar" type="text" onkeyup="search()">
+      <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+  </div>
+    <div class="menu" >
+      <ul>
+        <li class="menu-item">
+          <img src="images/trasua1.jpeg" alt="Sản phẩm 1">
+          <h2>Trà Sữa Trân Châu Đường Đen</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua2.jpeg" alt="Sản phẩm 2">
+          <h2>Trà Sữa 3Q</h2>
+          <p>25,000đ</p> 
+          <button> <a href="chitietsp1.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua3.jpeg" alt="Sản phẩm 3">
+          <h2>Dương Chi Cam Lộ</h2>
+          <p>35,000đ</p>
+          <button> <a href="chitietsp2.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua4.jpeg" alt="Sản phẩm 4">
+          <h2>Trà Đào Bốn Mùa</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp3.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua5.jpeg" alt="Sản phẩm 5">
+          <h2>Trà Đào Big Size</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp4.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua6.jpeg" alt="Sản phẩm 6">
+          <h2>Hồng Trà Mật Ong</h2>
+          <p>20,000đ</p>
+          <button> <a href="chitietsp5.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua7.jpeg" alt="Sản phẩm 7">
+          <h2>Trà Ô Long Bốn Mùa</h2>
+          <p>20,000đ</p>
+          <button> <a href="chitietsp6.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua8.jpeg" alt="Sản phẩm 8">
+          <h2>Trà Đào Ô Long</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp7.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua9.jpeg" alt="Sản phẩm 9">
+          <h2>Trà Thạch Đào</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp8.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua10.jpeg" alt="Sản phẩm 10">
+          <h2>Trà Đào Tứ Kì Xuân</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp9.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua11.jpeg" alt="Sản phẩm 11">
+          <h2>Nước Chanh Tươi Lạnh</h2>
+          <p>20,000đ</p>
+          <button> <a href="chitietsp10.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua12.jpeg" alt="Sản phẩm 12">
+          <h2>Trà Chanh Lô Hội</h2>
+          <p>20,000đ</p>
+          <button> <a href="chitietsp11.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua13.jpeg" alt="Sản phẩm 13">
+          <h2>Hồng Trà Chanh</h2>
+          <p>22,000đ</p>
+          <button> <a href="chitietsp12.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua14.jpeg" alt="Sản phẩm 14">
+          <h2>Trà Kem Bốn Mùa</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp13.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/trasua15.jpeg" alt="Sản phẩm 15">
+          <h2>Hồng Trà Mật Ong</h2>
+          <p>20,000đ</p>
+          <button> <a href="chitietsp14.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/kemmx1.jpeg" alt="Sản phẩm 16">
+          <h2>SUPER SUNDAE Trân Châu</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp15.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/kemmx2.jpeg" alt="Sản phẩm 17">
+          <h2>Sữa Kem Lắc Đào</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp16.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/kemmx3.jpeg" alt="Sản phẩm 18">
+          <h2>SUPER SUNDAE SOCOLA</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp17.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/kemmx4.jpeg" alt="Sản phẩm 19">
+          <h2> SUPER SUNDAE XOÀI</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp18.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/kemmx5.jpeg" alt="Sản phẩm 20">
+          <h2>SUPER SUNDAE DÂU TÂY</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp19.html">Chi Tiết</a></button>
+        </li>
+        <li class="menu-item">
+          <img src="images/kemmx6.jpeg" alt="Sản phẩm 20">
+          <h2>Super Sundae Lô Hội</h2>
+          <p>25,000đ</p>
+          <button> <a href="chitietsp20.html">Chi Tiết</a></button>
+        </li>
+      </ul>
+      </div>
+	</main>
+  <script>
+    function search(){
+        let menusearch=document.querySelector("#searchBar");
+        let menuitems=Array.from(document.querySelectorAll(".menu-item"));
+        menuitems.forEach(function(el){
+            let text=el.innerText;
+            if(text.indexOf(menusearch.value)>-1)
+            el.style.display="";
+            else el.style.display="none"; 
+        })
+    }
+    </script>
+</body>
+</html>
